@@ -1,19 +1,19 @@
-package creational.abstractfactory.fabric;
+package creational.abstractfactory.factory;
 
 import creational.abstractfactory.character.Archer;
 import creational.abstractfactory.character.Mage;
 import creational.abstractfactory.character.Warrior;
-import creational.abstractfactory.character.human.HumanArcher;
-import creational.abstractfactory.character.human.HumanMage;
-import creational.abstractfactory.character.human.HumanWarrior;
+import creational.abstractfactory.character.elf.ElfArcher;
+import creational.abstractfactory.character.elf.ElfMage;
+import creational.abstractfactory.character.elf.ElfWarrior;
 
 /**
- * HumanPartyCreator Class
+ * ElfPartyCreator Class
  *
- * @author a.slepakurov
+ * @author barabashka
  * @version 05/08/2015
  */
-public class HumanPartyCreator implements IPartyCreator {
+public class ElfPartyCreator implements IPartyCreator {
     private Mage mage;
     private Archer archer;
     private Warrior warrior;
@@ -21,7 +21,7 @@ public class HumanPartyCreator implements IPartyCreator {
     @Override
     public Mage createMage() {
         if (mage == null) {
-            mage = new HumanMage();
+            mage = new ElfMage();
         }
         return mage;
     }
@@ -29,7 +29,7 @@ public class HumanPartyCreator implements IPartyCreator {
     @Override
     public Archer createArcher() {
         if (archer == null) {
-            archer = new HumanArcher();
+            archer = new ElfArcher();
         }
         return archer;
     }
@@ -37,7 +37,7 @@ public class HumanPartyCreator implements IPartyCreator {
     @Override
     public Warrior createWarrior() {
         if (warrior == null) {
-            warrior = new HumanWarrior();
+            warrior = new ElfWarrior();
         }
         return warrior;
     }

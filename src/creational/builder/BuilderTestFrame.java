@@ -1,5 +1,6 @@
 package creational.builder;
 
+import common.ui.ATestFrame;
 import creational.builder.character.Hero;
 import creational.builder.character.HeroType;
 
@@ -12,7 +13,7 @@ import java.awt.*;
  * @author a.slepakurov
  * @version 05/08/2015
  */
-public class BuilderTestFrame extends JFrame {
+public class BuilderTestFrame extends ATestFrame {
 
     private JTextArea textLabel;
     private JTextField nameField;
@@ -21,17 +22,11 @@ public class BuilderTestFrame extends JFrame {
     private JComboBox<String> classCombo;
 
     public BuilderTestFrame() {
+        super("Builder Test Frame", 2, 3);
         initUI();
     }
 
     private void initUI() {
-        setTitle("Builder Test Frame");
-        setSize(600, 200);
-        setVisible(true);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        JPanel p = new JPanel();
-        p.setLayout(new GridLayout(2,3));
         textLabel = new JTextArea("Nothing happened yet");
         textLabel.setPreferredSize(new Dimension(300, 100));
         classCombo = new JComboBox<String>();
@@ -43,13 +38,12 @@ public class BuilderTestFrame extends JFrame {
         levelField = new JTextField("42");
         subclassField = new JTextField("dancer");
         createButton.addActionListener((e) -> createUser());
-        p.add(nameField);
-        p.add(textLabel);
-        p.add(levelField);
-        p.add(classCombo);
-        p.add(createButton);
-        p.add(subclassField);
-        add(p);
+        add(nameField);
+        add(textLabel);
+        add(levelField);
+        add(classCombo);
+        add(createButton);
+        add(subclassField);
     }
 
     private void createUser(){

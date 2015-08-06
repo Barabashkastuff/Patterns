@@ -25,7 +25,7 @@ public class Hero {
                 "name='" + name + '\'' +
                 "\n, level='" + level + '\'' +
                 "\n, subclass='" + subclass + '\'' +
-                "\n, type=" + type +
+                "\n, type=" + type.getName() +
                 '}';
     }
 

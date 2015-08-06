@@ -1,10 +1,11 @@
 package creational.abstractfactory;
 
+import common.ui.ATestFrame;
 import creational.abstractfactory.character.Party;
-import creational.abstractfactory.fabric.ElfPartyCreator;
-import creational.abstractfactory.fabric.HumanPartyCreator;
-import creational.abstractfactory.fabric.IPartyCreator;
-import creational.abstractfactory.fabric.OrcPartyCreator;
+import creational.abstractfactory.factory.ElfPartyCreator;
+import creational.abstractfactory.factory.HumanPartyCreator;
+import creational.abstractfactory.factory.IPartyCreator;
+import creational.abstractfactory.factory.OrcPartyCreator;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,39 +18,48 @@ import java.util.Map;
  * @author a.slepakurov
  * @version 05/08/2015
  */
-public class AbstractFactoryTestFrame extends JFrame {
+public class AbstractFactoryTestFrame extends ATestFrame {
 
     private JTextArea textLabel;
 
+    private Map<String, IPartyCreator> partyMap;
+
     public AbstractFactoryTestFrame() {
+        super("Absract Factory Test Frame", 600, 300, 3, 1);
         initUI();
     }
 
     private void initUI() {
-        setTitle("Absract Factory Test Frame");
-        setSize(500, 200);
-        setVisible(true);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         textLabel = new JTextArea("Nothing happened yet");
         textLabel.setPreferredSize(new Dimension(300, 100));
-        final Map<Integer, IPartyCreator> partyMap = new HashMap<>();
-        final JComboBox<String> comboBox = new JComboBox<>();
-        comboBox.addItem("human");partyMap.put(0, new HumanPartyCreator());
-        comboBox.addItem("elf");partyMap.put(1, new ElfPartyCreator());
-        comboBox.addItem("orc");partyMap.put(2, new OrcPartyCreator());
-        comboBox.setSelectedIndex(0);
+        final JComboBox<String> raceBox = new JComboBox<>();
+        raceBox.addItem("human");
+        raceBox.addItem("elf");
+        raceBox.addItem("orc");
+        raceBox.setSelectedIndex(0);
         JButton button = new JButton("Attack");
-        getContentPane().add(textLabel, BorderLayout.NORTH);
-        getContentPane().add(comboBox, BorderLayout.CENTER);
-        getContentPane().add(button, BorderLayout.SOUTH);
-        button.addActionListener((e) -> changeContent(partyMap.get(comboBox.getSelectedIndex())));
+        add(textLabel);
+        add(raceBox);
+        add(button);
+        button.addActionListener((e) -> {
+            if (partyMap == null) {
+                initMapping();
+            }
+            changeContent(partyMap.get((String) raceBox.getSelectedItem()));
+        });
     }
 
     private void changeContent(IPartyCreator creator) {
         Party party = new Party(creator.createMage(), creator.createArcher(), creator.createWarrior());
         String attackLog = party.partyAttack();
         textLabel.setText(attackLog);
+    }
+
+    private void initMapping() {
+        partyMap = new HashMap<>();
+        partyMap.put("human", new HumanPartyCreator());
+        partyMap.put("elf", new ElfPartyCreator());
+        partyMap.put("orc", new OrcPartyCreator());
     }
 
     public static void main(String[] args) {

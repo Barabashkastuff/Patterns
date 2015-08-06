@@ -1,4 +1,4 @@
-package creational.abstractfactory.fabric;
+package creational.abstractfactory.factory;
 
 import creational.abstractfactory.character.Archer;
 import creational.abstractfactory.character.Mage;
