@@ -24,6 +24,11 @@ public class ATestFrame extends JFrame {
         setLayout(new GridLayout(rows, cols));
     }
 
+    public ATestFrame(String title, LayoutManager manager) {
+        this(title);
+        setLayout(manager);
+    }
+
     public ATestFrame(String title, int width, int height, int rows, int cols) {
         this(title, width, height);
         setSize(width, height);
