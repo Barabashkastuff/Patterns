@@ -3,7 +3,7 @@ package creational.prototype.armyman;
 /**
  * ASoldier Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 07/08/2015
  */
 public abstract class ASoldier implements Cloneable {
@@ -35,6 +35,8 @@ public abstract class ASoldier implements Cloneable {
         this.type = type;
     }
 
+    protected abstract int incrementId();
+
     @Override
     public String toString() {
         return String.format("%s soldier #%d attacked with a %s.", type.getName(), getId(), getWeapon());
@@ -42,6 +44,8 @@ public abstract class ASoldier implements Cloneable {
 
     @Override
     public ASoldier clone() throws CloneNotSupportedException {
-        return this.clone();
+        ASoldier soldier = (ASoldier) super.clone();
+        soldier.setId(incrementId());
+        return soldier;
     }
 }

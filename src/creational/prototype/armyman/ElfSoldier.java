@@ -3,7 +3,7 @@ package creational.prototype.armyman;
 /**
  * ElfSoldier Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 07/08/2015
  */
 public class ElfSoldier extends ASoldier{
@@ -20,7 +20,8 @@ public class ElfSoldier extends ASoldier{
         return (ElfSoldier) super.clone();
     }
 
-    private int incrementId() {
+    @Override
+    protected int incrementId() {
         return globalId++;
     }
 }

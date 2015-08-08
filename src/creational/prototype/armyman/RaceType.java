@@ -11,7 +11,8 @@ import java.util.Map;
  */
 public enum RaceType {
     ELF("Elf"),
-    ORC("Orc");
+    ORC("Orc"),
+    HUMAN("Human");
 
     private String name;
     private static Map<String, RaceType> raceTypeMap;

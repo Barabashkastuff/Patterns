@@ -3,14 +3,14 @@ package creational.prototype.armyman;
 /**
  * OrcSoldier Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 07/08/2015
  */
 public class OrcSoldier extends ASoldier {
     private static int globalId = 0;
 
     public OrcSoldier() {
-        setId(incrementId());
+        setId(globalId);
         setWeapon("sword");
         setType(RaceType.ORC);
     }
@@ -20,7 +20,8 @@ public class OrcSoldier extends ASoldier {
         return (OrcSoldier) super.clone();
     }
 
-    private int incrementId() {
+    @Override
+    protected int incrementId() {
         return globalId++;
     }
 }
