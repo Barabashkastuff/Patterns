@@ -31,21 +31,25 @@ public class AbstractFactoryController implements Initializable {
 
     private Map<String, IPartyCreator> partyMap;
     private SingleSelectionModel<String> selectionModel;
+    private boolean outputNeverChanged = true;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        initMapping();
         selectionModel = raceBox.getSelectionModel();
         raceBox.setItems(FXCollections.observableArrayList("human", "elf", "orc"));
         selectionModel.select(0);
     }
 
-    public void changeContent() {
-        if (partyMap == null) {
-            initMapping();
-        }
+    public void attack() {
         IPartyCreator creator = partyMap.get(selectionModel.getSelectedItem());
         String attackLog = getParty(creator).partyAttack();
-        outputArea.setText(attackLog);
+        if (outputNeverChanged) {
+            outputArea.setText(attackLog);
+            outputNeverChanged = false;
+        } else {
+            outputArea.appendText(attackLog);
+        }
     }
 
     private Party getParty(IPartyCreator creator) {

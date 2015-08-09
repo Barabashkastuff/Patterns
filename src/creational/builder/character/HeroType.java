@@ -16,6 +16,7 @@ public enum HeroType {
 
     private String name;
     private static Map<String, HeroType> heroTypeMap;
+    private static String[] names;
 
     HeroType(String name) {
         this.setName(name);
@@ -35,6 +36,17 @@ public enum HeroType {
             initMapping();
         }
         return heroTypeMap.get(type);
+    }
+
+    public static String[] names() {
+        if (names != null) {
+            return names;
+        }
+        names = new String[values().length];
+        for (int i = 0; i < values().length; i++) {
+            names[i] = values()[i].getName();
+        }
+        return names;
     }
 
     private static void initMapping() {

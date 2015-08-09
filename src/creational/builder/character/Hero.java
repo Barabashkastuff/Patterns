@@ -21,12 +21,13 @@ public class Hero {
 
     @Override
     public String toString() {
-        return "Hero{" +
+        return "-------------------------------------" +
+                "\nHero{" +
                 "name='" + name + '\'' +
                 "\n, level='" + level + '\'' +
                 "\n, subclass='" + subclass + '\'' +
                 "\n, type=" + type.getName() +
-                '}';
+                "}\n";
     }
 
     public static class Builder {
