@@ -8,7 +8,7 @@ import creational.abstractfactory.character.Warrior;
  * PartyFabric Class
  *
  * @author a.slepakurov
- * @version 05/08/2015
+ * @version 8/5/2015
  */
 public interface IPartyCreator {
     Mage createMage();

@@ -4,7 +4,7 @@ package creational.prototype.armyman;
  * ASoldier Class
  *
  * @author a.slepakurov
- * @version 07/08/2015
+ * @version 8/7/2015
  */
 public abstract class ASoldier implements Cloneable {
     private int id;

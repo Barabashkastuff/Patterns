@@ -4,7 +4,7 @@ package creational.abstractfactory.character;
  * Mage Class
  *
  * @author a.slepakurov
- * @version 05/08/2015
+ * @version 8/5/2015
  */
 public abstract class Mage {
     private int mana;

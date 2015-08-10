@@ -8,7 +8,7 @@ import creational.factorymethod.spell.FireSpell;
  * FireSpellCreator Class
  *
  * @author a.slepakurov
- * @version 06/08/2015
+ * @version 8/6/2015
  */
 public class FireSpellCreator extends ASpellCreator {
 

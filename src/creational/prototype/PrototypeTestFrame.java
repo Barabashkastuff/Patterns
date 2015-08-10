@@ -16,7 +16,7 @@ import java.util.List;
  * PrototypeTestFrame Class
  *
  * @author a.slepakurov
- * @version 07/08/2015
+ * @version 8/7/2015
  */
 public class PrototypeTestFrame extends ATestFrame {
     private List<ASoldier> soldiers;

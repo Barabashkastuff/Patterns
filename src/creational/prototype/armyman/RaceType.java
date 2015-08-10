@@ -7,7 +7,7 @@ import java.util.Map;
  * RaceType Class
  *
  * @author a.slepakurov
- * @version 06/08/2015
+ * @version 8/6/2015
  */
 public enum RaceType {
     ELF("Elf"),

@@ -6,7 +6,7 @@ import creational.factorymethod.character.ACharacter;
  * AirSpell Class
  *
  * @author a.slepakurov
- * @version 06/08/2015
+ * @version 8/6/2015
  */
 public class AirSpell extends ASpell {
 

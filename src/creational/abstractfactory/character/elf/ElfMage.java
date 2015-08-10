@@ -8,7 +8,7 @@ import java.util.Random;
  * ElfMage Class
  *
  * @author barabashka
- * @version 05/08/2015
+ * @version 8/5/2015
  */
 public class ElfMage extends Mage{
     private Random random = new Random();

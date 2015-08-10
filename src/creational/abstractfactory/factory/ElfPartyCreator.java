@@ -11,7 +11,7 @@ import creational.abstractfactory.character.elf.ElfWarrior;
  * ElfPartyCreator Class
  *
  * @author barabashka
- * @version 05/08/2015
+ * @version 8/5/2015
  */
 public class ElfPartyCreator implements IPartyCreator {
     private Mage mage;

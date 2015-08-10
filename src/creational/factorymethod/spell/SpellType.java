@@ -7,7 +7,7 @@ import java.util.Map;
  * SpellType Class
  *
  * @author a.slepakurov
- * @version 06/08/2015
+ * @version 8/6/2015
  */
 public enum SpellType {
     AIR("air"),

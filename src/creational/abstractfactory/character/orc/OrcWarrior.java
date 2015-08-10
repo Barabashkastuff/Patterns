@@ -9,7 +9,7 @@ import java.util.Random;
  * OrcWarrior Class
  *
  * @author a.slepakurov
- * @version 05/08/2015
+ * @version 8/5/2015
  */
 public class OrcWarrior extends Warrior {
     private Random random = new Random();

@@ -6,7 +6,7 @@ import creational.abstractfactory.character.Archer;
  * ElfArcher Class
  *
  * @author a.slepakurov
- * @version 05/08/2015
+ * @version 8/5/2015
  */
 public class HumanArcher extends Archer {
 

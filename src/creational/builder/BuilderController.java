@@ -1,7 +1,7 @@
 package creational.builder;
 
 import creational.builder.character.Hero;
-import creational.builder.character.HeroType;
+import creational.builder.character.RaceType;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -36,7 +36,7 @@ public class BuilderController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         selectionModel = raceBox.getSelectionModel();
-        raceBox.setItems(FXCollections.observableArrayList(HeroType.names()));
+        raceBox.setItems(FXCollections.observableArrayList(RaceType.names()));
         selectionModel.select(0);
     }
 
@@ -46,7 +46,7 @@ public class BuilderController implements Initializable {
                 .putName(nameField.getText())
                 .levelUp(String.valueOf((int) levelSlider.getValue()))
                 .putSubclass(subclassField.getText())
-                .putType(HeroType.getType(selectionModel.getSelectedItem()))
+                .putType(RaceType.getType(selectionModel.getSelectedItem()))
                 .build();
         if (outputNeverChanged) {
             outputArea.setText(hero.toString());

@@ -7,18 +7,18 @@ import java.util.Map;
  * Type Class
  *
  * @author a.slepakurov
- * @version 06/08/2015
+ * @version 8/6/2015
  */
-public enum HeroType {
+public enum RaceType {
     MAGE("mage"),
     ARCHER("archer"),
     WARRIOR("warrior");
 
     private String name;
-    private static Map<String, HeroType> heroTypeMap;
+    private static Map<String, RaceType> heroTypeMap;
     private static String[] names;
 
-    HeroType(String name) {
+    RaceType(String name) {
         this.setName(name);
     }
 
@@ -31,7 +31,7 @@ public enum HeroType {
         return name;
     }
 
-    public static HeroType getType(String type) {
+    public static RaceType getType(String type) {
         if (heroTypeMap == null) {
             initMapping();
         }
@@ -50,8 +50,8 @@ public enum HeroType {
     }
 
     private static void initMapping() {
-        heroTypeMap = new HashMap<String, HeroType>();
-        for (HeroType s : values()) {
+        heroTypeMap = new HashMap<String, RaceType>();
+        for (RaceType s : values()) {
             heroTypeMap.put(s.getName(), s);
         }
     }

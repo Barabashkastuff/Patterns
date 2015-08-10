@@ -8,7 +8,7 @@ import java.util.Random;
  * HumanMage Class
  *
  * @author a.slepakurov
- * @version 05/08/2015
+ * @version 8/5/2015
  */
 public class HumanMage extends Mage{
     private Random random = new Random();

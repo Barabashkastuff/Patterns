@@ -4,13 +4,13 @@ package creational.builder.character;
  * Hero Class
  *
  * @author a.slepakurov
- * @version 06/08/2015
+ * @version 8/6/2015
  */
 public class Hero {
     private String name;
     private String level;
     private String subclass;
-    private HeroType type;
+    private RaceType type;
 
     public Hero(Builder builder) {
         this.name = builder.getName();
@@ -34,7 +34,7 @@ public class Hero {
         private String name = "Daisy";
         private String level = "42";
         private String subclass = "dancer";
-        private HeroType type = HeroType.ARCHER;
+        private RaceType type = RaceType.ARCHER;
 
         public Builder() {
         }
@@ -54,7 +54,7 @@ public class Hero {
             return this;
         }
 
-        public Builder putType(HeroType type) {
+        public Builder putType(RaceType type) {
             this.type = type;
             return this;
         }
@@ -75,7 +75,7 @@ public class Hero {
             return subclass;
         }
 
-        private HeroType getType() {
+        private RaceType getType() {
             return type;
         }
     }
