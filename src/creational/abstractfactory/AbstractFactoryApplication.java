@@ -7,22 +7,12 @@ package creational.abstractfactory;
  * @version 8/9/15
  */
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import common.ui.ACommonApplication;
 
-public class AbstractFactoryApplication extends Application {
+public class AbstractFactoryApplication extends ACommonApplication {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("resources/abstractfactory.fxml"));
-        primaryStage.setResizable(false);
-        primaryStage.setTitle("Absract Factory Application");
-        primaryStage.setScene(new Scene(root, 750, 400));
-        primaryStage.centerOnScreen();
-        primaryStage.show();
+    public AbstractFactoryApplication() {
+        super("resources/abstractfactory.fxml", "Absract Factory Application", 750, 400);
     }
 
     public static void main(String[] args) {

@@ -7,22 +7,12 @@ package creational.builder;
  * @version 8/9/15
  */
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import common.ui.ACommonApplication;
 
-public class BuilderApplication extends Application {
+public class BuilderApplication extends ACommonApplication {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("resources/builder.fxml"));
-        primaryStage.setResizable(false);
-        primaryStage.setTitle("Builder Application");
-        primaryStage.setScene(new Scene(root, 625, 360));
-        primaryStage.centerOnScreen();
-        primaryStage.show();
+    public BuilderApplication() {
+        super("resources/builder.fxml", "Builder Application", 625, 360);
     }
 
     public static void main(String[] args) {
