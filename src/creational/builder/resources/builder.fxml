@@ -13,11 +13,11 @@
       <Button id="generateButton" fx:id="generateButton" layoutX="458.0" layoutY="308.0" mnemonicParsing="false" onAction="#generate" text="Generate" />
       <ComboBox id="raceBox" fx:id="raceBox" layoutX="417.0" layoutY="228.0" prefHeight="25.0" prefWidth="170.0" />
       <TextArea id="outputArea" fx:id="outputArea" editable="false" layoutX="40.0" layoutY="27.0" prefHeight="248.0" prefWidth="340.0" promptText="Nothing happened yet!" text="Nothing happened yet!" wrapText="true" />
-      <TextField id="nameField" fx:id="nameField" layoutX="414.0" layoutY="55.0" />
+      <TextField id="nameField" fx:id="nameField" layoutX="414.0" layoutY="55.0" prefHeight="25.0" prefWidth="170.0" />
       <Label layoutX="417.0" layoutY="35.0" text="Name" />
       <Label layoutX="416.0" layoutY="158.0" text="Level" />
       <Label layoutX="416.0" layoutY="96.0" text="Subclass" />
-      <TextField id="subclassField" fx:id="subclassField" layoutX="415.0" layoutY="116.0" />
+      <TextField id="subclassField" fx:id="subclassField" layoutX="415.0" layoutY="116.0" prefHeight="25.0" prefWidth="170.0" />
       <Label layoutX="419.0" layoutY="209.0" text="Race" />
       <Slider id="levelSlider" fx:id="levelSlider" layoutX="417.0" layoutY="177.0" onDragDetected="#updateLevelLabel" onMouseClicked="#updateLevelLabel" prefHeight="15.0" prefWidth="170.0" />
       <Label id="levelLabel" fx:id="levelLabel" layoutX="552.0" layoutY="158.0" prefHeight="15.0" prefWidth="32.0" text="0" />
