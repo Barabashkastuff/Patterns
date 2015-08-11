@@ -11,7 +11,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * AbstractFactoryController Class
+ * BuilderController Class
  *
  * @author a.slepakurov
  * @version 8/9/15

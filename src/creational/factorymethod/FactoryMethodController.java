@@ -7,7 +7,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * AbstractFactoryController Class
+ * FactoryMethodController Class
  *
  * @author a.slepakurov
  * @version 8/10/15

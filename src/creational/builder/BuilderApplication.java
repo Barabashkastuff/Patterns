@@ -1,7 +1,7 @@
 package creational.builder;
 
 /**
- * AbstractFactoryApplication Class
+ * BuilderApplication Class
  *
  * @author a.slepakurov
  * @version 8/9/15

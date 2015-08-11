@@ -51,7 +51,7 @@ public class AwesomeDude {
 
     @Override
     public String toString() {
-        return "AwesomeDude{" +
+        return "\n----------------------------\nAwesomeDude{" +
                 "id='" + id + '\'' +
                 "\n, name='" + name + '\'' +
                 "\n, catchphrase='" + catchphrase + '\'' +
