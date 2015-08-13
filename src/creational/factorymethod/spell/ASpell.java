@@ -45,9 +45,8 @@ public class ASpell {
 
     @Override
     public String toString() {
-        return character.toString()
-                + "\ncasted the "
+        return "-------------------------------------\n" + character.toString() + "\ncasted the "
                 + ((name.equals("") || name.equals("name")) ? "unknown" : "\'" + name + "\'")
-                + " spell \nfrom " + type.getName() + " dimension.";
+                + " spell \nfrom " + type.getName() + " dimension.\n";
     }
 }

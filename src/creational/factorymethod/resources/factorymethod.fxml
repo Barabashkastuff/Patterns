@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-
-<Pane id="abcstractFactoryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="625.0" scaleShape="false" stylesheets="@builder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creational.factorymethod.FactoryMethodController">
-   <children>
-
-   </children>
+<?import javafx.scene.layout.Pane?>
+<Pane id="abcstractFactoryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="460.0" prefWidth="500.0" scaleShape="false" stylesheets="@factorymethod.css"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="creational.factorymethod.FactoryMethodController">
+    <children>
+        <TextArea id="outputArea" fx:id="outputArea" editable="false" layoutX="40.0" layoutY="27.0" prefHeight="236.0"
+                  prefWidth="422.0" promptText="Nothing happened yet!" text="Nothing happened yet!" wrapText="true"/>
+        <TextField id="nameField" fx:id="nameField" layoutX="40.0" layoutY="311.0"/>
+        <TextField id="spellNameField" fx:id="spellNameField" layoutX="40.0" layoutY="379.0"/>
+        <Label layoutX="40.0" layoutY="289.0" text="Character name"/>
+        <Label layoutX="39.0" layoutY="356.0" text="Spell name"/>
+        <Button layoutX="225.0" layoutY="421.0" mnemonicParsing="false" onAction="#createSpell" text="Generate"/>
+        <ComboBox fx:id="characterTypeBox" layoutX="306.0" layoutY="311.0" prefWidth="150.0"
+                  promptText="characterTypeBox"/>
+        <ComboBox fx:id="spellTypeBox" layoutX="306.0" layoutY="379.0" prefWidth="150.0" promptText="spellTypeBox"/>
+        <Label layoutX="306.0" layoutY="356.0" text="Spell type"/>
+        <Label layoutX="306.0" layoutY="289.0" text="Character type"/>
+    </children>
 </Pane>

@@ -10,6 +10,6 @@ import common.ui.ACommonApplication;
  */
 public class FactoryMethodApplication extends ACommonApplication{
     public FactoryMethodApplication() {
-        super("factorymethod.fxml", "Factory Method Application", 600, 600);
+        super("factorymethod.fxml", "Factory Method Application", 500, 460);
     }
 }
