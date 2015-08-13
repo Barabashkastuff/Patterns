@@ -13,7 +13,7 @@ public class Character {
         this(100);
     }
 
-    protected Character(int health){
+    protected Character(int health) {
         this.health = health;
     }
 
@@ -27,7 +27,7 @@ public class Character {
 
     @Override
     public String toString() {
-        return "Character has " +
-                health + " health";
+        return (health == 0) ? "Character is dead." : "Character has " +
+                health + " health.";
     }
 }

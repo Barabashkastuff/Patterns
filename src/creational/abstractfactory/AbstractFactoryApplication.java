@@ -12,7 +12,7 @@ import common.ui.ACommonApplication;
 public class AbstractFactoryApplication extends ACommonApplication {
 
     public AbstractFactoryApplication() {
-        super("resources/abstractfactory.fxml", "Absract Factory Application", 750, 400);
+        super("abstractfactory.fxml", "Absract Factory Application", 750, 400);
     }
 
     public static void main(String[] args) {

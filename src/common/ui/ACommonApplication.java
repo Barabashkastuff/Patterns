@@ -20,7 +20,7 @@ public class ACommonApplication extends Application {
     private int heigth;
 
     public ACommonApplication(String resourcePath, String title, int width, int heigth) {
-        this.resourcePath = resourcePath;
+        this.resourcePath = "resources/" + resourcePath;
         this.title = title;
         this.width = width;
         this.heigth = heigth;

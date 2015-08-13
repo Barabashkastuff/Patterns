@@ -10,7 +10,7 @@ import common.ui.ACommonApplication;
  */
 public class PrototypeApplication extends ACommonApplication{
     public PrototypeApplication() {
-        super("resources/prototype.fxml", "Prototype Application", 500, 415);
+        super("prototype.fxml", "Prototype Application", 500, 415);
     }
 
     public static void main(String[] args) {
