@@ -8,7 +8,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<Pane id="abcstractFactoryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="625.0" scaleShape="false" stylesheets="@builder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creational.builder.BuilderController">
+<Pane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="625.0" scaleShape="false" stylesheets="@builder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creational.builder.BuilderController">
    <children>
       <Button id="generateButton" fx:id="generateButton" layoutX="458.0" layoutY="308.0" mnemonicParsing="false" onAction="#generate" text="Generate" />
       <ComboBox id="raceBox" fx:id="raceBox" layoutX="417.0" layoutY="228.0" prefHeight="25.0" prefWidth="170.0" />
