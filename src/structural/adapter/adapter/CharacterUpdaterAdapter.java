@@ -1,4 +1,4 @@
-package structural.adapter;
+package structural.adapter.adapter;
 
 import structural.adapter.adaptee.HealthDecreaser;
 import structural.adapter.adaptee.HealthIncreaser;
@@ -12,7 +12,7 @@ import structural.adapter.adaptee.HealthIncreaser;
 public class CharacterUpdaterAdapter
         //class adapter
         extends HealthIncreaser implements IUpdateCharacterHealth{
-//  object adapter
+    //  object adapter
     private HealthDecreaser healthDecreaser;
 
     public CharacterUpdaterAdapter() {
