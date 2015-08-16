@@ -5,7 +5,7 @@ import common.ui.ACommonApplication;
 /**
  * DecoratorApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class DecoratorApplication extends ACommonApplication{

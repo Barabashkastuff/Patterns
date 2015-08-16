@@ -6,7 +6,7 @@ import structural.bridge.soldiers.ASoldier;
 /**
  * Elf Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class Elf extends ASoldier {

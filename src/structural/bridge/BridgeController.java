@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 /**
  * BridgeController Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 14/08/2015
  */
 public class BridgeController implements Initializable{

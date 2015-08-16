@@ -3,7 +3,7 @@ package structural.adapter.adapter;
 /**
  * UpdateCharacterHealth Interface
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/11/2015
  */
 public interface IUpdateCharacterHealth {

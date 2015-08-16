@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 /**
  * ACommonApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/10/2015
  */
 public class ACommonApplication extends Application {

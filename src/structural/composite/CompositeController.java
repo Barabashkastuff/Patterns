@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 /**
  * CompositeController Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class CompositeController implements Initializable{

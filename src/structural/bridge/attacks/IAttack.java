@@ -3,7 +3,7 @@ package structural.bridge.attacks;
 /**
  * ISoldier Interface
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public interface IAttack {

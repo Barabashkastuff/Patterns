@@ -5,7 +5,7 @@ import common.ui.ACommonApplication;
 /**
  * FacadeApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class FacadeApplication extends ACommonApplication {

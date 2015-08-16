@@ -5,7 +5,7 @@ import structural.bridge.attacks.IAttack;
 /**
  * ASoldier Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public abstract class ASoldier {

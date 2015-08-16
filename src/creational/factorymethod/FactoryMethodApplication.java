@@ -5,7 +5,7 @@ import common.ui.ACommonApplication;
 /**
  * FactoryMethodApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/10/2015
  */
 public class FactoryMethodApplication extends ACommonApplication{

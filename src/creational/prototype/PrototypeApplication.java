@@ -5,7 +5,7 @@ import common.ui.ACommonApplication;
 /**
  * PrototypeApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/12/2015
  */
 public class PrototypeApplication extends ACommonApplication{

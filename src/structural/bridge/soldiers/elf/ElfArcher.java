@@ -5,7 +5,7 @@ import structural.bridge.attacks.IAttack;
 /**
  * ElfArcher Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class ElfArcher extends Elf {

@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 /**
  * FacadeController Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class FacadeController implements Initializable {

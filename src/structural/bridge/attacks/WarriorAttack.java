@@ -3,7 +3,7 @@ package structural.bridge.attacks;
 /**
  * WarriorSoldier Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class WarriorAttack implements IAttack {

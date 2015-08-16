@@ -6,7 +6,7 @@ import structural.bridge.soldiers.ASoldier;
 /**
  * Human Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class Human extends ASoldier {

@@ -5,7 +5,7 @@ import common.ui.ACommonApplication;
 /**
  * AdapterApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/13/2015
  */
 public class AdapterApplication extends ACommonApplication{

@@ -3,7 +3,7 @@ package structural.bridge.attacks;
 /**
  * ArcherSoldier Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class ArcherAttack implements IAttack {

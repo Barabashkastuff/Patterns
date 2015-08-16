@@ -3,7 +3,7 @@ package structural.adapter.adaptee;
 /**
  * HealthDecreaser Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/11/2015
  */
 public class HealthDecreaser {

@@ -3,7 +3,7 @@ package structural.facade.imperialforce;
 /**
  * Core Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class Core {

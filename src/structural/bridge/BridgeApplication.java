@@ -5,7 +5,7 @@ import common.ui.ACommonApplication;
 /**
  * BridgeApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class BridgeApplication extends ACommonApplication{

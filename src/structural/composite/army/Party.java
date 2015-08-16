@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Party Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/14/2015
  */
 public class Party implements IArmy {

@@ -5,7 +5,7 @@ import common.ui.ACommonApplication;
 /**
  * SingletonApplication Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/10/2015
  */
 public class SingletonApplication extends ACommonApplication{

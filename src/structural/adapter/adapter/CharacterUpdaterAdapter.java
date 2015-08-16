@@ -6,7 +6,7 @@ import structural.adapter.adaptee.HealthIncreaser;
 /**
  * CharacterUpdaterAdapter Class
  *
- * @author Andrew S. Slepakurov
+ * @author a.slepakurov
  * @version 8/11/2015
  */
 public class CharacterUpdaterAdapter
