@@ -31,7 +31,8 @@ public class SingletonController implements Initializable {
     private boolean outputNeverChanged = true;
 
     @Override
-    public void initialize(URL location, ResourceBundle resources) {}
+    public void initialize(URL location, ResourceBundle resources) {
+    }
 
     public void changeDude() {
         try {
@@ -44,7 +45,7 @@ public class SingletonController implements Initializable {
             if (outputNeverChanged) {
                 outputArea.setText(AwesomeDude.getInstance().toString());
                 outputNeverChanged = false;
-            }else{
+            } else {
                 outputArea.appendText(AwesomeDude.getInstance().toString());
             }
         } catch (InterruptedException e) {

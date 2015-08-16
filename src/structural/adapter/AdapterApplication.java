@@ -9,8 +9,8 @@ import common.ui.ACommonApplication;
  * @version 8/13/2015
  */
 public class AdapterApplication extends ACommonApplication{
-    public AdapterApplication(String resourcePath, String title, int width, int heigth) {
-        super("adapter.fxml", title, width, heigth);
+    public AdapterApplication() {
+        super("adapter.fxml", "Adapter Application", 400, 400);
     }
 
     public static void main(String[] args){

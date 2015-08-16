@@ -9,7 +9,7 @@ import creational.factorymethod.character.Elf;
  * @author a.slepakurov
  * @version 8/6/2015
  */
-public class ElfCreator implements ICharacterCreator{
+public class ElfCreator implements ICharacterCreator {
 
     @Override
     public ACharacter create(String nickname) {

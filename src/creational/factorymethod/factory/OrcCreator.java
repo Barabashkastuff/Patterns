@@ -9,7 +9,7 @@ import creational.factorymethod.character.Orc;
  * @author a.slepakurov
  * @version 8/6/2015
  */
-public class OrcCreator implements ICharacterCreator{
+public class OrcCreator implements ICharacterCreator {
 
     @Override
     public ACharacter create(String nickname) {

@@ -6,7 +6,7 @@ package creational.prototype.armyman;
  * @author a.slepakurov
  * @version 8/7/2015
  */
-public class ElfSoldier extends ASoldier{
+public class ElfSoldier extends ASoldier {
     private static int globalId = 0;
 
     public ElfSoldier() {

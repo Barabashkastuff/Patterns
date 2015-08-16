@@ -51,10 +51,6 @@ public class AwesomeDude {
 
     @Override
     public String toString() {
-        return "\n----------------------------\nAwesomeDude{" +
-                "id='" + id + '\'' +
-                "\n, name='" + name + '\'' +
-                "\n, catchphrase='" + catchphrase + '\'' +
-                '}';
+        return String.format("%s the Awesome Dude entered the room and said \"%s\"", name, catchphrase);
     }
 }

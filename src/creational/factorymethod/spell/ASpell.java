@@ -45,8 +45,6 @@ public class ASpell {
 
     @Override
     public String toString() {
-        return "-------------------------------------\n" + character.toString() + "\ncasted the "
-                + ((name.equals("") || name.equals("name")) ? "unknown" : "\'" + name + "\'")
-                + " spell \nfrom " + type.getName() + " dimension.\n";
+        return String.format("%s casted the %s  spell from %s dimension.\n", character.toString(), ((name.equals("") || name.equals("name")) ? "unknown" : "\'" + name + "\'"), type.getName());
     }
 }

@@ -10,7 +10,7 @@ import java.util.Random;
  * @author a.slepakurov
  * @version 8/5/2015
  */
-public class OrcMage extends Mage{
+public class OrcMage extends Mage {
     private Random random = new Random();
 
     @Override

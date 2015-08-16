@@ -8,10 +8,15 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<Pane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0" scaleShape="false" stylesheets="@abstractfactory.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creational.abstractfactory.AbstractFactoryController">
-   <children>
-      <Button id="attackButton" fx:id="attackButton" layoutX="342.0" layoutY="345.0" mnemonicParsing="false" onAction="#attack" text="Attack" />
-      <ComboBox id="raceBox" fx:id="raceBox" layoutX="300.0" layoutY="304.0" prefWidth="150.0" />
-      <TextArea id="outputArea" fx:id="outputArea" editable="false" layoutX="34.0" layoutY="14.0" prefHeight="268.0" prefWidth="682.0" promptText="Nothing happened yet!" text="Nothing happened yet!" wrapText="true" />
-   </children>
+<Pane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="750.0" scaleShape="false" stylesheets="@abstractfactory.css"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="creational.abstractfactory.AbstractFactoryController">
+    <children>
+        <Button id="attackButton" fx:id="attackButton" layoutX="342.0" layoutY="345.0" mnemonicParsing="false"
+                onAction="#attack" text="Attack"/>
+        <ComboBox id="raceBox" fx:id="raceBox" layoutX="300.0" layoutY="304.0" prefWidth="150.0"/>
+        <TextArea id="outputArea" fx:id="outputArea" editable="false" layoutX="34.0" layoutY="14.0" prefHeight="268.0"
+                  prefWidth="682.0" promptText="Nothing happened yet!" text="Nothing happened yet!" wrapText="true"/>
+    </children>
 </Pane>

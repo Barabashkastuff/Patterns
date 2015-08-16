@@ -9,7 +9,7 @@ import creational.factorymethod.character.Human;
  * @author a.slepakurov
  * @version 8/6/2015
  */
-public class HumanCreator implements ICharacterCreator{
+public class HumanCreator implements ICharacterCreator {
 
     @Override
     public ACharacter create(String nickname) {

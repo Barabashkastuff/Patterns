@@ -8,7 +8,7 @@ import common.ui.ACommonApplication;
  * @author a.slepakurov
  * @version 8/12/2015
  */
-public class PrototypeApplication extends ACommonApplication{
+public class PrototypeApplication extends ACommonApplication {
     public PrototypeApplication() {
         super("prototype.fxml", "Prototype Application", 500, 415);
     }

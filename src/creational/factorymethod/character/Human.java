@@ -6,7 +6,7 @@ package creational.factorymethod.character;
  * @author a.slepakurov
  * @version 8/6/2015
  */
-public class Human extends ACharacter{
+public class Human extends ACharacter {
 
     public Human() {
         super(RaceType.HUMAN);

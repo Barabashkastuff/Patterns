@@ -12,6 +12,8 @@ import creational.abstractfactory.character.Warrior;
  */
 public interface IPartyCreator {
     Mage createMage();
+
     Archer createArcher();
+
     Warrior createWarrior();
 }

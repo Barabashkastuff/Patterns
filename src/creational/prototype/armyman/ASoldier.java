@@ -39,7 +39,7 @@ public abstract class ASoldier implements Cloneable {
 
     @Override
     public String toString() {
-        return String.format("%s soldier #%d attacked with a %s.", type.getName(), getId(), getWeapon());
+        return String.format("%s soldier #%d attacked with a %s.\n", type.getName(), getId(), getWeapon());
     }
 
     @Override

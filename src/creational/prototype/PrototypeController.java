@@ -60,7 +60,7 @@ public class PrototypeController implements Initializable {
     public void attack() {
         StringBuilder message = new StringBuilder("");
         soldiers.forEach((soldier) -> {
-            message.append(soldier.toString()).append("\n");
+            message.append(soldier.toString());
         });
         outputArea.setText(message.toString());
     }

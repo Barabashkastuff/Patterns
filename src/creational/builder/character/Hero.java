@@ -21,13 +21,7 @@ public class Hero {
 
     @Override
     public String toString() {
-        return "-------------------------------------" +
-                "\nHero{" +
-                "name='" + name + '\'' +
-                "\n, level='" + level + '\'' +
-                "\n, subclass='" + subclass + '\'' +
-                "\n, type=" + type.getName() +
-                "}\n";
+        return String.format("%s the %s  (lvl. %s) rises with %s subclass.\n", name, type.getName(), level, subclass);
     }
 
     public static class Builder {

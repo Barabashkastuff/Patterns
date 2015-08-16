@@ -41,7 +41,7 @@ public class Party {
         this.warrior = warrior;
     }
 
-    public String partyAttack(){
+    public String partyAttack() {
         return String.format("--------------------------------\n%s \n%s \n%s\n", mage.cast(), archer.shoot(), warrior.attack());
     }
 }
