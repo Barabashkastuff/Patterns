@@ -1,5 +1,7 @@
 package structural.adapter.adaptee;
 
+import structural.adapter.character.Character;
+
 /**
  * HealthIncreaser Class
  *
@@ -7,7 +9,9 @@ package structural.adapter.adaptee;
  * @version 8/11/2015
  */
 public class HealthIncreaser {
-    public int increaseHealth(int current, int increaseBy) {
-        return (current + increaseBy > 100) ? 100 : current + increaseBy;
+    public void increaseHealth(Character character, int increaseBy) {
+        if (character.getHealth() != 0) {
+            character.setHealth((character.getHealth() + increaseBy > 100) ? 100 : character.getHealth() + increaseBy);
+        }
     }
 }

@@ -2,6 +2,7 @@ package structural.adapter.adapter;
 
 import structural.adapter.adaptee.HealthDecreaser;
 import structural.adapter.adaptee.HealthIncreaser;
+import structural.adapter.character.Character;
 
 /**
  * CharacterUpdaterAdapter Class
@@ -11,16 +12,20 @@ import structural.adapter.adaptee.HealthIncreaser;
  */
 public class CharacterUpdaterAdapter
         //class adapter
-        extends HealthIncreaser implements IUpdateCharacterHealth{
+        extends HealthIncreaser implements IUpdateCharacterHealth {
     //  object adapter
     private HealthDecreaser healthDecreaser;
 
     public CharacterUpdaterAdapter() {
-       healthDecreaser = new HealthDecreaser();
+        healthDecreaser = new HealthDecreaser();
     }
 
     @Override
-    public int updateHealth(int current, int updateBy) {
-        return (updateBy < 0) ? healthDecreaser.decreaseHealth(current, updateBy) : super.increaseHealth(current, updateBy);
+    public void updateHealth(Character character, int updateBy) {
+        if (updateBy < 0) {
+            healthDecreaser.decreaseHealth(character, Math.abs(updateBy));
+        } else {
+            super.increaseHealth(character, updateBy);
+        }
     }
 }

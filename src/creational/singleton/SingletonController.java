@@ -19,7 +19,7 @@ import java.util.ResourceBundle;
  * @author a.slepakurov
  * @version 8/10/15
  */
-public class SingletonController implements Initializable {
+public class SingletonController {
 
     @FXML
     private TextArea outputArea;
@@ -29,10 +29,6 @@ public class SingletonController implements Initializable {
     private TextField phraseField;
 
     private boolean outputNeverChanged = true;
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-    }
 
     public void changeDude() {
         try {

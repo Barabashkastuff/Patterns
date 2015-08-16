@@ -1,5 +1,7 @@
 package structural.adapter.adapter;
 
+import structural.adapter.character.Character;
+
 /**
  * UpdateCharacterHealth Interface
  *
@@ -7,5 +9,5 @@ package structural.adapter.adapter;
  * @version 8/11/2015
  */
 public interface IUpdateCharacterHealth {
-    int updateHealth(int current, int updateBy);
+    void updateHealth(Character character, int updateBy);
 }

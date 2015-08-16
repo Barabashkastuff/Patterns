@@ -1,5 +1,7 @@
 package structural.adapter.adaptee;
 
+import structural.adapter.character.Character;
+
 /**
  * HealthDecreaser Class
  *
@@ -7,7 +9,7 @@ package structural.adapter.adaptee;
  * @version 8/11/2015
  */
 public class HealthDecreaser {
-    public int decreaseHealth(int current, int decreaserBy) {
-        return (current < decreaserBy) ? 0 : current - decreaserBy;
+    public void decreaseHealth(Character character, int decreaserBy) {
+        character.setHealth((character.getHealth() < decreaserBy) ? 0 : character.getHealth() - decreaserBy);
     }
 }

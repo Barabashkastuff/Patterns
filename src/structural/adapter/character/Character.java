@@ -27,7 +27,7 @@ public class Character {
 
     @Override
     public String toString() {
-        return (health == 0) ? "Character is dead." : "Character has " +
-                health + " health.";
+        return (health == 0) ? "Character is dead.\n" : "Character has " +
+                health + " health.\n";
     }
 }
