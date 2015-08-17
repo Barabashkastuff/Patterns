@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<Pane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="415.0" prefWidth="500.0" scaleShape="false" stylesheets="@proxy.css"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="structural.proxy.ProxyController">
+    <children>
+        <TextArea id="outputArea" fx:id="outputArea" editable="false" layoutX="40.0" layoutY="27.0" prefHeight="236.0"
+                  prefWidth="422.0" promptText="Nothing happened yet!" text="Nothing happened yet!" wrapText="true"/>
+    </children>
+</Pane>
