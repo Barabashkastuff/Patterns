@@ -6,7 +6,7 @@ import common.ui.ACommonApplication;
  * ChainOfResponsibilityApplication Class
  *
  * @author Andrew S. Slepakurov
- * @version 18/08/2015
+ * @version 8/18/2015
  */
 public class ChainOfResponsibilityApplication extends ACommonApplication {
     protected ChainOfResponsibilityApplication() {
