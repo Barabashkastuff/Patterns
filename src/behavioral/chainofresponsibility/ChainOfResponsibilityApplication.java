@@ -12,4 +12,8 @@ public class ChainOfResponsibilityApplication extends ACommonApplication {
     protected ChainOfResponsibilityApplication() {
         super("chainofresponsibility.fxml", "Chain Of Responsibility", 500, 500);
     }
+
+    public static void main(String[] args){
+      launch(args);
+    }
 }

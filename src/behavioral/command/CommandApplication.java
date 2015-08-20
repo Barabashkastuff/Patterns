@@ -12,4 +12,8 @@ public class CommandApplication extends ACommonApplication {
     protected CommandApplication() {
         super("command.fxml", "Command Application", 500, 500);
     }
+
+    public static void main(String[] args){
+      launch(args);
+    }
 }
