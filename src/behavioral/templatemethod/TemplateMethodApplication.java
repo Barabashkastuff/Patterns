@@ -9,7 +9,7 @@ import common.ui.ACommonApplication;
  * @version 8/20/2015
  */
 public class TemplateMethodApplication extends ACommonApplication {
-    protected TemplateMethodApplication(String resourcePath, String title, int width, int heigth) {
+    protected TemplateMethodApplication() {
         super("templatemethod.fxml", "Template Method Application", 500, 500);
     }
 
